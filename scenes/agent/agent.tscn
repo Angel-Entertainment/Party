@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://swp3yk6jqr66"]
+
+[ext_resource type="Texture2D" uid="uid://ddkf2hjvsgrg2" path="res://icon.svg" id="1_v6ifw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_djphv"]
+radius = 96.42
+
+[node name="Agent" type="CharacterBody2D" unique_id=643794902]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=785160933]
+shape = SubResource("CircleShape2D_djphv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=300526133]
+texture = ExtResource("1_v6ifw")
