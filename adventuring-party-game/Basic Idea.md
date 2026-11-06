@@ -1,0 +1,1 @@
+An adventuring party game with ML based NPCs and monsters.
