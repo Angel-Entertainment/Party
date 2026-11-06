@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bp2ip8x7366um"]
+
+[ext_resource type="Script" uid="uid://0b2jmoynrgq6" path="res://scenes/testing/test_character/test_character.gd" id="1_1km3c"]
+[ext_resource type="Texture2D" uid="uid://ddkf2hjvsgrg2" path="res://icon.svg" id="1_3wkkc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmnsm"]
+size = Vector2(150, 150)
+
+[node name="TestCharacter" type="RigidBody2D" unique_id=1212710454]
+mass = 65.0
+linear_damp = 5.0
+angular_damp = 1.0
+script = ExtResource("1_1km3c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1926956833]
+shape = SubResource("RectangleShape2D_pmnsm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1600294856]
+rotation = 1.5707964
+texture = ExtResource("1_3wkkc")

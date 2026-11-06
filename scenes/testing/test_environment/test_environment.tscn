@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://tcxppanuwtqk"]
+
+[ext_resource type="Script" uid="uid://dtbepirisjwl2" path="res://scenes/testing/test_environment/test_environment.gd" id="1_6u4vx"]
+[ext_resource type="PackedScene" uid="uid://bp2ip8x7366um" path="res://scenes/testing/test_character/test_character.tscn" id="1_b2omb"]
+[ext_resource type="PackedScene" uid="uid://nojpb17ipbyg" path="res://scenes/testing/test_objects/test_objects.tscn" id="2_6rg7l"]
+
+[node name="TestEnvironment" type="Node2D" unique_id=2067855844]
+script = ExtResource("1_6u4vx")
+
+[node name="TestCharacter" parent="." unique_id=1212710454 instance=ExtResource("1_b2omb")]
+position = Vector2(367, 282)
+rotation = -1.5707964
+
+[node name="TestObjects" parent="." unique_id=359291197 instance=ExtResource("2_6rg7l")]
+position = Vector2(193, 116)
+
+[node name="TestObjects2" parent="." unique_id=792027019 instance=ExtResource("2_6rg7l")]
+position = Vector2(668, 212)
+
+[node name="TestObjects3" parent="." unique_id=1723017286 instance=ExtResource("2_6rg7l")]
+position = Vector2(820, 462)
